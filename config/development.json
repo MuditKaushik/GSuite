@@ -1,3 +1,41 @@
 {
-    "port": 4201
+    "port": 4201,
+    "google": {
+        "client_id": "969028608416-drq19k0clohdaitldkjrjdfhac85k7av.apps.googleusercontent.com",
+        "project_id": "unifiedclassroom-1533041217406",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://www.googleapis.com/oauth2/v3/token",
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        "client_secret": "2ZBb96cFEeFOeogNmMd6Zx93",
+        "redirect_uris": [
+            "http://localhost:4201/"
+        ],
+        "javascript_origins": [
+            "http://localhost:4201"
+        ]
+    },
+    "personal": {
+        "type": "service_account",
+        "project_id": "unifiedclassroom-1533041217406",
+        "private_key_id": "00a7238900b43ec5042e5e1e46cf002ff3120ec3",
+        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQClrMZpUtQi3nYh\nax2bEUjRZaRJxESerijiSKWn9PsGOQV3hjMx1Gu3c8DDfahYpUcpmdMUHyp8+kyM\nhFd9VvYjJTO6LwcaGeYJgOF14hUP2TnBMBRHKDxXB+Y2Z9jTPdfoEinwRyD6wzne\nLkR6dKjFm4e3DFBNl8+NwbALO2umMjBCwuZ9CGDoaliNPeB4G6HN548HcFjhxqxk\nGeryxo+YpjJGYpzSp3NWSj9UoDjCvxIEPosqEgkK+RwaNOolvcqZCjc/rbNWir4J\na6Pb14q4bjQhMWYCE6R/QCJfUjNRYaE/XM5NAvv9wTdB7tS3kQ78K6KEaH1eW0XY\n/C1fStJXAgMBAAECggEAODU6aYBO9XeJF4RqWnJORLCZwOckKrvGpiLkhOuiALX2\ny1rN4qGBXA+a/hgTNeP5FT2ZddGvDhCzSNcbgawvvLPB7XBIFgxkVaQSmfZ2k9Zs\neEUSFCQr+JD3A01PLDfmmNcUwG65WypB50XGOM98dPJz5F/6nKCdK6hjTCRAPPVt\nWHMLANkn/8ArjMZ8EwIFPFs8NhOlfHPxRVj28INiGI7E+dXRDgOuxWivRfzNY/km\nlDJtbHohAzeV83O8QjKJEv5Ie+vHChTX3jjdGsG84enVYaYVz9W0/JPBsFTaoVMy\nd1zGA2RDm6f0EFys9+6nsZEHvQOPYFIBGhD4T0yu1QKBgQDPZjtscio5CLmSq724\nHHke+P+/afiIsiB7CTN/Gn33gVOMsrdjtNvACrcpPwTEW0HxDb79l/0WeNbUiWKc\nvxWKATl+thzRZFPYM2wxisIUKDVeS3iJ3bZGy6qcWfiZA7Ev2jHoIS/+uH7tr32s\nwkNGkCs/peRpZkDy4RDDp5na+wKBgQDMf4R+yBTCzWkhs+f9R54El39zWkyROP/E\nLe5Mjopu/+ZfRIDiCmpfTtPiB32bZFtKIbP/CeRjjlJevgKoPpA4YLIGl3ug/ltf\no1FhLWM6+/s+1WxSzuv525LrGpeZL0FCFb/eqBllLprqtpqFUjHHwGTW1YU1Jabz\n2/U33zTHVQKBgG4RhoX2TNw5+iqSBLzaN5mtciVG+0SorD4/0tmo2KNrOkkYa+V5\njYps5Wn5bPE8sVFaBzuU1xd/CByB0Rj4/Fhib/4EbmTeRvUdzVS5nGiQMkqZ6R3Z\n0ave2Ovjf+DNKdMIjKXyPwODLLG+CgeOjZ+8UYeU5hTd1KhRs9DyeN/TAoGAX9ab\nR7eJU0plLPBdluwLeGdvyaXWIHEwHMbR2XssEZ1IX/mA1W7AL26ICnQsP7kmt3VY\nH/yI1seKfvBZ2nOHr4RRqpkvzWGnfQjTSNG2oZwaQXZQT/a9zNlE334U8iudT9VV\nmIn7bNoMrFdrz3OX9N+L4ssqpJ/CwKKjJ84ptAkCgYBB5S5+ldQ4FgRK/otyxH5q\n/MftNNvkxD8xKEv6WaNQuvYMrhBlapb+8j5GN1k4HZpYotQyMKTdH9pKStH1Tjet\nibg1CFqsqWlLWiooDamI5CkeIYTVaeULTPoWtTfogFEI+h2a6JdKPdjTgaPn0FCu\ng60I+wYsyWyl/uikz1Vg6Q==\n-----END PRIVATE KEY-----\n",
+        "client_email": "gsuitaccount@unifiedclassroom-1533041217406.iam.gserviceaccount.com",
+        "client_id": "102972206751930796462",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://oauth2.googleapis.com/token",
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gsuitaccount%40unifiedclassroom-1533041217406.iam.gserviceaccount.com"
+    },
+    "powerschool": {
+        "type": "service_account",
+        "project_id": "gsuitadmin-bangalore",
+        "private_key_id": "1c6a2392bbfa5d435ad5f6ffd278895475e5a76f",
+        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDAY7kATpufW88v\n/peMgcsOLBFPyKqP90g8uZUu9guhN3ajqI+f7wt+CpMHW1zlYVQlc3JbStWCuBzV\nR1KSCSc7LwJ4aC6dvxFYQoSwPBINadtT8TSAdV7QA24Ec8MzmN7ClUztHjrDQIdJ\n10wcN8PjT6pL0s0oxx8j9N+sNVla2WG1yE4LTRtfFaYI5vKyQGEMXxEpc63EnDXl\n98zdH/2uKhxGamwVcbqLK9fb4XATTqo9dH+bcjSRVLrFaLbCn+1MPIYVRjDchydd\nxmvr5wZeswNwF2KY1gPtMsjT+uYZ7N6FF1+uPRatkmJ43se4zitdO3HnAQiRCJ3s\n/KY7l9+hAgMBAAECggEABr4f/Fyk6+B++gzDUTV10UL2XtxWrPnCzn0HF1igdvef\niPQWB4oMVjAm78OyFWh0N2VMyVoNslmDSi7IHC3lsfdvb9qf4p+xCw22wonybIWs\nngwmtcdXSbVLEG0htt/ZU8rBgdB0yQXMkAgThuwl6YQv4N0sG00iQGN7SNjsTyie\nTfPJDlWm2nMlaZIHapaqH/OmcWWc+4R6j2qULtWcSvE8PsOHnV+1Nw/rmjyuzqOF\nnxsxNOwUpqLcny+UKfy4j09xzYqGvyXgGDwvII7J5E7BzvhyFtF/YnAd+00j1dK9\nkXr5DN7dxoR8jAH3xMqS3rJet9UIqrktcIuwqXjZqQKBgQD6tHhkBfuqFo1m1tOj\n6MlZYVThn4cjBkhVVEeg+6J8Xe+4DkO6zs2qz7BZgJKkt2n9r0XlDKLBHvN5LVOz\ndPzVF7KmjB2oiWbOgeUAgwvGx0jW6CCecYMG3faIXGr26XG/8vzFvp1LtgJUZodj\nud7Vx4pVgkZEv4G600YRwBnW6QKBgQDEc/LHKd3M1Ts0WKja40IJbK1wODwNHkR8\n13/th+5Bn9wwwTYLjUu1epJ6FwJi8dy0LQNr6i+df0eNBDawdNcuU2IrGrmEsmhO\nezB/tZpmk4n7TEr25G1W0QPWF3IpESAkTM070K04jhGIExeQt2lqiUBwSIDO2g6C\nuNf6y26/+QKBgHPvr1j6F1ah1URAhmDfTvXBeAJaxqCg0CR9tB4zIAIJYskn95RU\n/HFIWFIbjjUUCLTjMBxrSnyqdoeMOY/cwus8aUZxt2lwGRXYpfElqPWExR90+1iq\nP6CWVuLacjC65fqRQOmla5JOmiczvtqUYwNToppGg35ZXYHrIBUnVAu5AoGBAK1w\nwLLdX5jr2K1KaSl24mJ3tFgTDdF3G3gsuiD3lX4SqM/ShOiGAoVihdeMYOsCJZxc\n8VxhEVC3gnAZfD8lqKSZsV3k5k0lRbmkQRk/N+W/9F4M6VI4MeAoAH8PjBZ9rCbg\nN4HLpmL76rZ8RJ3bkBIiwuVe3XnCQnVexDADUu/hAoGBAIcWcpRT2qTcq8fU8Iyl\n4fUGy0GU5EM13KDoWGWfw/seNztspnaTxt5miZAT938SGrhbxAfAAEwuLggqPSf8\nXII5OFO+ebNBr4KtaMGHY5GRQryMLtHLY34ezXdkjMzS7ZdC0tsAIZCygRMioBqS\nQUbY2UhEwJoTHhBbrGSzG1Ab\n-----END PRIVATE KEY-----\n",
+        "client_email": "gsuitebangalore@gsuitadmin-bangalore.iam.gserviceaccount.com",
+        "client_id": "116013778421303999948",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://oauth2.googleapis.com/token",
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gsuitebangalore%40gsuitadmin-bangalore.iam.gserviceaccount.com"
+    }
 }

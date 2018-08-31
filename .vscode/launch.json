@@ -11,6 +11,7 @@
             "program": "${workspaceRoot}/api/server/server.ts",
             "sourceMaps": true,
             "preLaunchTask": "tsc",
+            "protocol": "legacy",
             "outFiles": [
                 "${workspaceRoot}/dist/server/server.js"
             ]
