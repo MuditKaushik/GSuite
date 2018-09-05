@@ -1,44 +1,4 @@
 {
     "port": 4201,
-    "apikey": "AIzaSyAH10ERREAe_dlKQ2GaB8tgZ3OKsSrW3ec",
-    "google": {
-        "client_id": "969028608416-qehc7ocihkhrto4gd5dp9nb49i4qdf1k.apps.googleusercontent.com",
-        "project_id": "unifiedclassroom-1533041217406",
-        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-        "token_uri": "https://www.googleapis.com/oauth2/v3/token",
-        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-        "client_secret": "WxZJkS1qtybm6SrCBCJ8WQaS",
-        "redirect_uris": [
-            "http://localhost:4201/oauthcallback"
-        ],
-        "javascript_origins": [
-            "http://localhost:4201"
-        ]
-    },
-    "personal": {
-        "type": "service_account",
-        "project_id": "unifiedclassroom-1533041217406",
-        "private_key_id": "eaa27e53475b36433b94b89076b9e2334a7d186e",
-        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCsgjsYhR8ddpP8\ngyhek03WQMQ9XpCPiN8MdcN9NETQkRXqPWjNxa95BZu/fw77psHx311U3J8cT/ks\nD6NFie6BPfTXkGrz261ixOT6r/w+AVmtA+Vy+dXKg4TPPg2eGIervCI6jwMscbtZ\nkbgCtwbzX/DKvZiarGRJb07EQoAGgt+I21R2jax9bqGUHqIpDTAt280cilVJEhG8\nxjt+QMpOWI/U76kYcDBkNZmpoaz68ZLdnp/l6C2mDZyPZK9yfoHGIuBJUUAS3seC\n+GQ9z86Al+wzt+Q9SWfIe7S6YfCPCwkOtEiKECzGov4pASePXSzANvka17eaQPZM\nZrct0/i5AgMBAAECggEAPz9QI2FLUyYSg9Yiiuo+83qzeDyfi8CG5q6WieUMBdvr\nyQHS1v7PovNncwJGoAU3vlJCicaJn3vCw2DIX8p+Y2wvxIjybY3xN/EwcqjrNmCQ\nXFq9WTY4KBOoMcNygrBDrbdAZW/hnf3kzqYabQRly/0072Ar/ymNa08f9dzby4a9\npw0aEx9zSWD9QEZiCx2jvlRgoRyPuglIBgD5nScyIoONyfiVekPOGV7CHxA2t48h\nLlbV3TxrVZkhpa6raGwQA4Nlh4ejwR15+ub4cNGAolLy8rFZ+YvNi+Mkd3bdTGUh\nB/dqHYkql33G6auWndi5tCmCe/+QC6QDdW40/csnsQKBgQDh1fxLK0LUQXRQ4Jef\n7JHi4ZjfzbYqvxLjGJWRJZ9weyej1jCK4IT+AwZtB6pZjlFGhfAbjMzwHrw7JdL2\ni7M8HJpPf3BBNzDQZgRg56OZ3gvkrOQR6MKYeeGdtgQqFlFKA2KSFMyaJwWHxpoQ\npxBhDShlFEnKQGWr4N2esFkqnwKBgQDDjNPb0cZzZM1IohnXj4ui6mlg6W4sxSNt\nYZG1UZcApu/MyIM0WVEXDLVWgXeVe6Z4Q9Jw3xHbyVOayZTzFVZegy86trs+muOA\ndqbXOvZda9TOO2Rp7i8y8uIGBxnV8w2PANSnBUY2sRWICJ/v+5zK4Vjqplic5hDT\nwlQY1MH1pwKBgQDBIk58PogNm9iMnjYth5SP0lz58SQ8VGIjos+ubN14xWn2HGQx\nMKer0Ax7y9Vsd2Ccjkj0VqqhI7fYYZWUUY679r4lBJiMvVVatBREh3ULTrEfJJh7\nlHJvEbTYOmQ/Vgy43kI7Kdx8bKi3ICp72VQRm74TC5G7jO0mW81MPAZVgwKBgGWD\nJLO3GULr8BkldS7OqJlBAMU7SGNbT0HH5aDvoujGwDNZX6r8Nrk1cqleehqSXt+N\nrZ/EXPvwbkMrI/Rwfi6AATOEin08YJ9eeMvAIwZqJMWOVVkcOUpEhYrFgubqzn4O\n21V8ym83zEqa15P31PQIuWTOR6/jSpbzCT7+q1V/AoGAf/i0EomqaLFrkIg4l9AA\nF81HPdn1zNqZ66eNEagRk9D5lBGjs8Cagl5IbplL+9aSgd2t2ft+SPtY+bL17wPB\nhWlrcR83Gtdtfz7CaRj3bd5mR428VjEVNuplCsX2teyu+C8ZlKRHb2SHC3u7MTcQ\ngUK6EFf/h1l7NTpgRlBE2Wo=\n-----END PRIVATE KEY-----\n",
-        "client_email": "gsuitaccount@unifiedclassroom-1533041217406.iam.gserviceaccount.com",
-        "client_id": "102972206751930796462",
-        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-        "token_uri": "https://oauth2.googleapis.com/token",
-        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gsuitaccount%40unifiedclassroom-1533041217406.iam.gserviceaccount.com"
-    },
-    "powerschool": {
-        "client_id": "702121831515-9cf266rcli8sifl2ql731e1r6q24br0p.apps.googleusercontent.com",
-        "project_id": "gsuitadmin-bangalore",
-        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-        "token_uri": "https://www.googleapis.com/oauth2/v3/token",
-        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-        "client_secret": "UJzhd4Dtw5uR9PGPoJOCaHg7",
-        "redirect_uris": [
-            "http://localhost:4201/api/drive/callback"
-        ],
-        "javascript_origins": [
-            "http://localhost:4201"
-        ]
-    }
+    "apikey": "AIzaSyAH10ERREAe_dlKQ2GaB8tgZ3OKsSrW3ec"    
 }

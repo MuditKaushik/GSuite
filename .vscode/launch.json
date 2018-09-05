@@ -10,7 +10,6 @@
             "name": "GSuit",
             "program": "${workspaceRoot}/api/server/server.ts",
             "sourceMaps": true,
-            "protocol": "inspector",
             "outFiles": [
                 "${workspaceRoot}/dist/server/server.js"
             ]

@@ -8,3 +8,4 @@ export * from './IGoogleFile';
 export * from './IGoogleFileCopy';
 export * from './IGoogleFilePicker';
 export * from './IGoogleFiles';
+export * from './IGoogleFileDetail';
