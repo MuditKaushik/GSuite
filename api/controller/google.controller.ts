@@ -6,9 +6,10 @@ import * as path from 'path';
 export class GSuiteController {
     private get drive() { return new GSuiteDrive(); }
     constructor(route: Router) {
-        route.get('/token', this.getGSuiteDriveToken.bind(this));
-        route.get('/files', this.getGSuiteFiles.bind(this));
-        route.get('/file/:id/detail', this.getFileDetails.bind(this));
+        route.get('/files', this.getDriveFiles.bind(this));
+        route.get('/file/:id/detail', this.getDriveFileDetails.bind(this));
+        route.get('/folder/:name', this.createDriveFolder.bind(this));
+        route.post('/files/:id/copy', this.GSuiteFileCopy.bind(this));
         route.post('/files/upload/:parentId', multer({
             dest: path.resolve(__dirname, '../../temp/'),
             storage: multer.diskStorage({
@@ -20,49 +21,51 @@ export class GSuiteController {
                 }
             })
         }).array('file', 100), this.uploadGSuiteFile.bind(this));
-        route.post('/files/:id/copy', this.GSuiteFileCopy.bind(this));
-        route.delete('/file/:id', this.deleteGsuitFile.bind(this));
-        route.get('/folder/:name', this.createGSuitFolder.bind(this));
+        route.delete('/file/:id', this.deleteDriveFile.bind(this));
     }
     getFileDetails(req: Request, res: Response) {
-        this.drive.getFileDetailsById(req.params.id).subscribe((result) => { 
-            res.send(result);
+        this.drive.getFileDetailsById(req.params.id).subscribe((result) => {
+            res.status(200).send(result);
+        }, (err) => {
+            res.status(400).send(err);
         });
     }
     uploadGSuiteFile(req: Request, res: Response) {
-        this.drive.uploadFilesToGSuite(req.params.parentId).subscribe((filesUploaded) => {
-            res.send(filesUploaded);
+        this.drive.uploadFilesToDrive(req.params.parentId).subscribe((filesUploaded) => {
+            res.status(200).send(filesUploaded);
+        }, (err) => {
+            res.status(400).send(err);
         });
     }
     GSuiteFileCopy(req: Request, res: Response) {
-        this.drive.copyGSuiteFiles(req.params.id, req.body.parentId).subscribe((result) => {
-            if (result) {
-                res.status(200).send(result);
-            } else {
-                res.status(200).send(result);
-            }
+        this.drive.copyDriveFiles(req.params.id, req.body.parentId).subscribe((result) => {
+            res.status(200).send(result);
+        }, (err) => {
+            res.status(400).send(err);
         });
     }
-    getGSuiteDriveToken(req: Request, res: Response) {
-        this.drive.getGSuiteDriveToken().subscribe((tokendata) => {
-            res.status(200).send(tokendata);
-        });
-    }
-    getGSuiteFiles(req: Request, res: Response) {
-        this.drive.getGSuiteFiles().subscribe((files) => {
+    getDriveFiles(req: Request, res: Response) {
+        this.drive.getDriveFiles().subscribe((files) => {
             res.status(200).send(files);
         }, (err) => {
             res.status(400).send(err);
         });
     }
-    createGSuitFolder(req: Request, res: Response) {
-        this.drive.createGSuitFolder(req.params.name).subscribe((file) => {
+    getDriveFileDetails(req: Request, res: Response) {
+        this.drive.getFileDetailsByFileId(req.params.id).subscribe((file) => {
             res.status(200).send(file);
         }, (err) => {
             res.status(400).send(err);
         });
     }
-    deleteGsuitFile(req: Request, res: Response) {
+    createDriveFolder(req: Request, res: Response) {
+        this.drive.createDriveFolder(req.params.name).subscribe((file) => {
+            res.status(200).send(file);
+        }, (err) => {
+            res.status(400).send(err);
+        });
+    }
+    deleteDriveFile(req: Request, res: Response) {
         this.drive.deleteDrivefile(req.params.id).subscribe((file) => {
             res.status(200).send(file);
         }, (err) => {

@@ -2,23 +2,18 @@ import * as config from 'config';
 import { OAuth2Client } from 'google-auth-library';
 import { google } from 'googleapis';
 import { IGoogleConfig } from '../../model/google';
-import { Credentials } from 'google-auth-library/build/src/auth/credentials';
+import { Observable } from '@reactivex/rxjs';
 
-export class GoogleClient {
-    private static _client: OAuth2Client = {} as OAuth2Client;
-    static get client(): OAuth2Client {
-        return this._client;
-    }
-    static set setClient(credentials: Credentials) {
-        this._client.setCredentials(credentials);
-    }
-    constructor() {
-        let GSuitConfig = config.get<IGoogleConfig>("powerschool");
-        let oauthClient = new google.auth.OAuth2(
-            GSuitConfig.client_id,
-            GSuitConfig.client_secret,
-            GSuitConfig.redirect_uris[0]);
-        GoogleClient._client = oauthClient;
-    }
+export function GoogleAuthClient(): Observable<OAuth2Client> {
+    let accountConfig = config.get<IGoogleConfig>('serviceAccount');
+    let authClientPromise = google.auth.getClient({
+        credentials: {
+            client_email: accountConfig.client_email,
+            private_key: accountConfig.private_key
+        },
+        projectId: accountConfig.project_id,
+        scopes: ['https://www.googleapis.com/auth/drive']
+
+    });
+    return Observable.fromPromise(authClientPromise);
 }
-

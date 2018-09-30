@@ -9,3 +9,4 @@ export * from './IGoogleFileCopy';
 export * from './IGoogleFilePicker';
 export * from './IGoogleFiles';
 export * from './IGoogleFileDetail';
+export * from './IGooglePermissions';

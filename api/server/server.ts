@@ -2,14 +2,12 @@ import * as express from 'express';
 import * as bodyParser from 'body-parser';
 import * as config from 'config';
 import { enableCROS } from './server-settings';
-import { GSuiteRoutes, GSuiteCallbackRoute } from './server-route-config';
-import { GSuiteAuthClient } from '../middleware';
-import { GoogleClient } from '../service/gsuite';
+import { GSuiteRoutes } from './server-route-config';
 
-export class GoogleSuitServer extends GoogleClient {
+
+export class GoogleSuitServer {
     app: express.Application = express();
     constructor() {
-        super();
         this.settings();
         this.enableServer();
     }
@@ -21,8 +19,7 @@ export class GoogleSuitServer extends GoogleClient {
         this.serverRoutes();
     }
     private serverRoutes() {
-        this.app.use("/api/drivecode", GSuiteCallbackRoute());
-        this.app.use("/api/drive", GSuiteAuthClient, GSuiteRoutes());
+        this.app.use("/api/drive", GSuiteRoutes());
     }
     private enableServer() {
         let port: number = config.get<number>('port');
